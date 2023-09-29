@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+bldsugar_men=[113,85,90,150,149,88,93,115,135,80,77,82,129]
+bldsugar_women=[67,98,89,120,133,150,184,69,89,79,120]
+
+plt.xlabel("suger range")
+plt.ylabel("total no of patience")
+plt.title("blood sugar analysis")
+plt.hist([bldsugar_men,bldsugar_women],bins=[65,115,135,185],rwidth=0.10,color=['purple','black'],label=['men','women'])
+plt.legend()
+plt.show()
